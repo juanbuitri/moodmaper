@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #c7d2fe, #fef9c3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.app {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #3b82f6;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.emotion-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.emotion-selector button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.emotion-selector button:hover {
+  transform: scale(1.05);
+}
+
+.save-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.calendar-title {
+  margin-top: 30px;
+  color: #444;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.day {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.day:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
